@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DRPS PHCA (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DRPS PHCA (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
