@@ -11,7 +11,7 @@
   <Identity
     Name="18306DRPSPhilippineCommer.DRPSPHCAApp"
     Publisher="CN=AE525AFA-79D5-40B4-B836-E2271E3A76D2"
-    Version="2026.3.19.0" />
+    Version="2026.6.18.0" />
 
   <mp:PhoneIdentity PhoneProductId="59b78abd-cfa0-4b42-9c90-1660dd4d3849" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
