@@ -4,6 +4,10 @@
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>DRPS_PHCA</RootNamespace>
+    <!-- Ensure the project is built for a concrete processor architecture so packaged
+         applications with an app host exe are not ProcessorArchitecture neutral. Adjust
+         this RID if you need to target a different architecture. -->
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <Platforms>x86;x64;ARM64;ARM32;AnyCPU</Platforms>
     <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
     <PublishProfile>win-$(Platform).pubxml</PublishProfile>
@@ -88,7 +92,11 @@
 
   <!-- Publish Properties -->
   <PropertyGroup>
-    <PublishReadyToRun>true</PublishReadyToRun>
+    <!-- Disable ReadyToRun publish by default to avoid missing runtime packs during publish
+         when a matching runtime package isn't restored. If you need ReadyToRun, set this to
+         true and ensure you publish with a supported runtime identifier and restore packages
+         with /p:PublishReadyToRun=true. -->
+    <PublishReadyToRun>false</PublishReadyToRun>
     <PublishTrimmed>False</PublishTrimmed>
     <AppxPackageSigningEnabled>False</AppxPackageSigningEnabled>
     <GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
