@@ -107,13 +107,14 @@
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
     <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
-    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <GenerateTestArtifacts>False</GenerateTestArtifacts>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
     <AppInstallerUri>C:\Users\Swee Fong Loo\source\repos\Output</AppInstallerUri>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
     <PackageIcon>StoreLogo.scale-400.png</PackageIcon>
-    <AppxPackageDir>C:\PHCADev\DRPS PHCA App\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\fongl\source\repos\drpsphca\DRPSPHCAAppWindows\DRPS PHCA\bin\Output</AppxPackageDir>
+    <PackageCertificateThumbprint>0749CA41FB3EF7CE761165A518FB25894D68003B</PackageCertificateThumbprint>
   </PropertyGroup>
 
   <!-- Helper target: publish for each Windows RID. Invoke with msbuild /t:PublishAllArchitectures
